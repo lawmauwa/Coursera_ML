@@ -18,7 +18,7 @@ for iter = 1:num_iters
     %
 
 
-
+    theta  = theta - alpha * (1/m) * transpose((transpose(theta) * transpose(X) - transpose(y)) * X);
 
 
 
