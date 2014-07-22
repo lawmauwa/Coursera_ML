@@ -33,7 +33,7 @@ X = [ones(m, 1) X];
 a = max(sigmoid(all_theta*X'), [], 1);
 b = (sigmoid(all_theta*X'));
 
-p = (a==b)' * [1:num_labels]';
+p = (a==b)' * [1:num_labels];
 
 
 
