@@ -13,7 +13,7 @@ if ~exist('lambda', 'var') || isempty(lambda)
 end
 
 input_layer_size = 3;
-hidden_layer_size = 5;
+hidden_layer_size = 3;
 num_labels = 3;
 m = 5;
 
