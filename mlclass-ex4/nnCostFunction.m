@@ -83,8 +83,8 @@ J = (sum(sum(-y_matrix' .* log(a_3) .- ((1 .- y_matrix)' .* log(1 .- a_3)))))*(1
 d_3 = a_3' .- y_matrix;
 d_2 = d_3 * Theta2(:,2:end) .* sigmoidGradient(z_2)';
 
-Delta_2 = d_3' * a_2
-Delta_1 = d_2' * a_1'
+Delta_2 = d_3' * a_2;
+Delta_1 = d_2' * a_1';
 
 Theta1_grad = Delta_1 / m + (lambda/m) * [zeros(size(Theta1_grad,1),1) Theta1(:,2:end)];
 Theta2_grad = Delta_2 / m + (lambda/m) * [zeros(size(Theta2_grad,1),1) Theta2(:,2:end)];
